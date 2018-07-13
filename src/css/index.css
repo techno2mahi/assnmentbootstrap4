@@ -4733,9 +4733,9 @@ img.logo {
 .about-text {
   background-color: whitesmoke;
   color: black;
-  border-radius: 1rem;
-  -moz-border-radius: 4px / 4px;
-  -webkit-border-radius: 4px 4px;
+  -webkit-border-radius: 0.9em;
+  -moz-border-radius: 0.9em;
+  border-radius: 0.9em;
   padding: 0.5rem; }
 
 footer a {
@@ -4753,6 +4753,11 @@ footer a {
     margin-bottom: 1.25rem;
     font-size: 0.25rem;
     line-height: 1.4; } }
+
+.roundedCorner {
+  -webkit-border-radius: 0.9em;
+  -moz-border-radius: 0.9em;
+  border-radius: 0.9em; }
 
 footer {
   background-color: #222;

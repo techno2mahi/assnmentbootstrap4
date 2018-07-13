@@ -26,15 +26,19 @@ a.nav-link
     color: black;
 }
 
+@mixin roundedborder($radius:0.9em) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
 img.logo {
   max-width: 2rem;
 }
 .about-text {
   background-color: whitesmoke;
   color: black;
-  border-radius: 1rem;
-  -moz-border-radius: 4px / 4px;
-  -webkit-border-radius: 4px 4px;
+  @include roundedborder;
   padding: 0.5rem;
 }
 
@@ -59,4 +63,8 @@ footer a {
     font-size: 0.25rem;
     line-height: 1.4;
   }
+}
+
+.roundedCorner{
+    @include roundedborder;
 }
